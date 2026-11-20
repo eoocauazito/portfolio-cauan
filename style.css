@@ -1,0 +1,300 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111114;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* CABEÇALHO */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 8%;
+    border-bottom: 1px solid #29292e;
+}
+
+header h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+header h1 span {
+    color: #7654c8;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #b7b7c2;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #7654c8;
+}
+
+/* APRESENTAÇÃO */
+
+#inicio {
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 80px 12%;
+}
+
+#inicio p:first-child {
+    color: #9578df;
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+#inicio h2 {
+    font-size: clamp(36px, 6vw, 65px);
+    max-width: 800px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+#inicio p:nth-of-type(2) {
+    color: #a4a4af;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 550px;
+    margin-bottom: 35px;
+}
+
+#inicio a {
+    background-color: #7654c8;
+    color: white;
+    text-decoration: none;
+
+    padding: 15px 25px;
+    border-radius: 5px;
+
+    width: fit-content;
+    transition: 0.3s;
+}
+
+#inicio a:hover {
+    background-color: #6040ad;
+    transform: translateY(-3px);
+}
+
+/* RODAPÉ */
+
+footer {
+    padding: 25px 8%;
+    border-top: 1px solid #29292e;
+    color: #777780;
+    font-size: 13px;
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #inicio {
+        padding: 70px 8%;
+    }
+}
+/* SEÇÕES GERAIS */
+
+.secao {
+    padding: 100px 12%;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.subtitulo {
+    color: #9578df;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.secao h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+
+/* SOBRE MIM */
+
+.texto-sobre {
+    color: #a4a4af;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 700px;
+}
+
+
+/* SERVIÇOS */
+
+.grade-servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card-servico {
+    background-color: #1b1b21;
+    border: 1px solid #29292e;
+    border-radius: 10px;
+
+    padding: 30px;
+
+    transition: 0.3s;
+}
+
+.card-servico:hover {
+    border-color: #7654c8;
+    transform: translateY(-5px);
+}
+
+.card-servico h3 {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.card-servico p {
+    color: #a4a4af;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 800px) {
+
+    .grade-servicos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .secao {
+        padding: 70px 8%;
+    }
+
+    .grade-servicos {
+        grid-template-columns: 1fr;
+    }
+
+}
+  .destaque{
+    background-color: #7654c8;
+    color: white;
+    transform: scale(1.03);
+    transition: 0.3s;
+  }
+
+  .card-servico{
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .card-servico.selecionado{
+    background-color: #7654c8;
+    color: white;
+    transform: translate(-5px);
+  }
+  #contato {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#formulario-contato {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#formulario-contato input,
+#formulario-contato textarea {
+    padding: 15px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #1c1c20;
+    color: white;
+    font-size: 16px;
+}
+
+#formulario-contato textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#formulario-contato button {
+    padding: 15px;
+    background-color: #7654c8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .secao {
+        padding: 60px 6%;
+    }
+
+    #contato {
+        padding: 60px 6%;
+    }
+
+    #formulario-contato {
+        width: 100%;
+    }
+
+    #formulario-contato input,
+    #formulario-contato textarea {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+}
