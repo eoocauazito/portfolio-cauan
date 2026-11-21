@@ -1,147 +1,199 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content="Cauan - Desenvolvimento de sites modernos e profissionais">
-     <title>Cauan | Desenvolvimento Web</title>
+<html lang="pt-BR">
 
-<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Cauan - Desenvolvimento de sites modernos, profissionais e responsivos.">
+
+    <meta name="author" content="Cauan">
+
+    <title>Cauan | Desenvolvimento Web</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- CABEÇALHO -->
+
     <header>
+
         <h1>CAUAN<span>.</span></h1>
 
-        <nav>
-            <a href="#inicio">Icício</a>
+        <nav aria-label="Navegação principal">
+            <a href="#inicio">Início</a>
             <a href="#sobre">Sobre</a>
             <a href="#servicos">Serviços</a>
             <a href="#contato">Contato</a>
         </nav>
+
     </header>
 
+
     <main>
+
+        <!-- INÍCIO -->
+
         <section id="inicio">
+
             <p>DESENVOLVIMENTO WEB</p>
 
             <h2>Transformando ideias em experiências digitais.</h2>
 
-            <p>Desenvolvo sites modernos, funcionais e pensados para conectar negócios às pessoas.</p>
-            
+            <p>
+                Desenvolvo sites modernos, funcionais e pensados
+                para conectar negócios às pessoas.
+            </p>
+
             <a href="#contato">Vamos conversar</a>
-            
+
         </section>
-        <!-- SEÇÃO SOBRE -->
-
-<section id="sobre" class="secao">
-
-    <div class="container">
-
-        <p class="subtitulo">CONHEÇA MEU TRABALHO</p>
-
-        <h2>Sobre mim</h2>
-
-        <p class="texto-sobre">
-            Meu nome é Cauan e estou construindo minha trajetória
-            no desenvolvimento web.
-
-            Meu objetivo é criar experiências digitais modernas,
-            funcionais e que ajudem empresas e profissionais
-            a fortalecer sua presença na internet.
-        </p>
-
-    </div>
-
-</section>
 
 
-<!-- SEÇÃO SERVIÇOS -->
+        <!-- SOBRE -->
 
-<section id="servicos" class="secao">
+        <section id="sobre" class="secao">
 
-    <div class="container">
+            <div class="container">
 
-        <p class="subtitulo">O QUE POSSO DESENVOLVER</p>
+                <p class="subtitulo">CONHEÇA MEU TRABALHO</p>
 
-        <h2>Meus serviços</h2>
+                <h2>Sobre mim</h2>
 
-        <div class="grade-servicos">
+                <p class="texto-sobre">
+                    Meu nome é Cauan e estou construindo minha trajetória
+                    no desenvolvimento web.
 
-            <article class="card-servico">
-
-                <h3>Sites institucionais</h3>
-
-                <p>
-                    Sites profissionais para apresentar empresas,
-                    negócios e seus serviços.
+                    Meu objetivo é criar experiências digitais modernas,
+                    funcionais e que ajudem empresas e profissionais
+                    a fortalecer sua presença na internet.
                 </p>
 
-            </article>
+            </div>
+
+        </section>
 
 
-            <article class="card-servico">
+        <!-- SERVIÇOS -->
 
-                <h3>Landing Pages</h3>
+        <section id="servicos" class="secao">
 
-                <p>
-                    Páginas desenvolvidas para apresentar produtos,
-                    serviços e atrair potenciais clientes.
-                </p>
+            <div class="container">
 
-            </article>
+                <p class="subtitulo">O QUE POSSO DESENVOLVER</p>
+
+                <h2>Meus serviços</h2>
+
+                <div class="grade-servicos">
+
+                    <article class="card-servico">
+
+                        <h3>Sites institucionais</h3>
+
+                        <p>
+                            Sites profissionais para apresentar empresas,
+                            negócios e seus serviços.
+                        </p>
+
+                    </article>
 
 
-            <article class="card-servico">
+                    <article class="card-servico">
 
-                <h3>Sites responsivos</h3>
+                        <h3>Landing Pages</h3>
 
-                <p>
-                    Páginas adaptadas para computadores,
-                    tablets e celulares.
-                </p>
+                        <p>
+                            Páginas desenvolvidas para apresentar produtos,
+                            serviços e atrair potenciais clientes.
+                        </p>
 
-            </article>
+                    </article>
 
-        </div>
 
-    </div>
+                    <article class="card-servico">
 
-</section>
-<section id="contato">
-    <h2>Entre em contato</h2>
+                        <h3>Sites responsivos</h3>
 
-    <form id="formulario-contato">
+                        <p>
+                            Páginas adaptadas para computadores,
+                            tablets e celulares.
+                        </p>
 
-        <input 
-            type="text" 
-            id="nome-contato" 
-            placeholder="Seu nome"
-            required
-        >
+                    </article>
 
-        <input 
-            type="email" 
-            id="email-contato" 
-            placeholder="Seu e-mail"
-            required
-        >
+                </div>
 
-        <textarea 
-            id="mensagem-contato" 
-            placeholder="Sua mensagem"
-            required
-        ></textarea>
+            </div>
 
-        <button type="submit">Enviar mensagem</button>
+        </section>
 
-    </form>
-</section>    
-</main>
+
+        <!-- CONTATO -->
+
+        <section id="contato" class="secao">
+
+            <div class="container">
+
+                <p class="subtitulo">VAMOS CONVERSAR?</p>
+
+                <h2>Entre em contato</h2>
+
+                <form id="formulario-contato">
+
+                    <input
+                        type="text"
+                        id="nome-contato"
+                        name="nome"
+                        placeholder="Seu nome"
+                        autocomplete="name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="email-contato"
+                        name="email"
+                        placeholder="Seu e-mail"
+                        autocomplete="email"
+                        required
+                    >
+
+                    <textarea
+                        id="mensagem-contato"
+                        name="mensagem"
+                        placeholder="Sua mensagem"
+                        rows="5"
+                        required
+                    ></textarea>
+
+                    <button type="submit">
+                        Enviar pelo WhatsApp
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
     <footer>
-        <p>© 2026 Cauan. Todos os direitos reservados</p>
+
+        <p>© 2026 Cauan. Todos os direitos reservados.</p>
+
     </footer>
+
+
+    <!-- JAVASCRIPT -->
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
